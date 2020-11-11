@@ -6,13 +6,13 @@
 # Introduction
 
 Effective supply chain management is an integral part of many businesses and essential to business success, customer satisfaction, and operational costs management. 
-The goal of a supply chain is to have an item in stock when a customer is ready to purchase the item, in the cheapest and fastest means possible.
+The goal of a supply chain is to have an item in stock when a customer is ready to purchase the item in the cheapest and fastest means possible.
 
 One of the common challenges in supply chain management is the complexity associated with predicting backorder. Luckily with the current data growth and advances in predictive analytics and artificial intelligence, machine learning could rescue supply chain managers from this daunting task and therefore save your business from unnecessary costs associated with backorder.
 
 In this project, I demonstrate using powerful python open source libraries and packages (pandas, scikit-learn, TensorFlow, and Keras) to build a model that predicts items that are more likely to backorder given some input features.
 
-Once satisfied with the model results, I’ll deploy the predictive solution as a web service through Heroku, a Platform as a Service (PaaS) application, where any user will be able to input required item features and receive a prediction whether that item is or is not likely to backorder within the next eight weeks.  
+Once satisfied with the model results, I’ll deploy the predictive solution as a web service through Heroku--a Platform as a Service (PaaS) application, where any user will be able to input required item features and receive a prediction whether that item is or is not likely to backorder within the next eight weeks.  
 
 # Data Collection
 
@@ -78,7 +78,7 @@ For detailed code on **identifying hidden data relationships** please see: **[02
 
 # Data Preprocessing
 
-To prepare for data for modeling, I performed the following actions:
+To prepare data for modeling, I performed the following actions:
 
 - Tested various methods for handling the data imbalance identified during data exploration and selected to use a combination of under-sampling the majority sample and over-sampling the minority sample using the Synthetic Minority  Oversampling Technique (SMOTE).
 
@@ -173,7 +173,7 @@ For detailed code and charts on the CNN model please see: **[06. cnn.ipynb](http
 
 # Model Deployment
 
-Model simplicity s an important consideration in applied machine learning. In practice, compromising model accuracy for model simplicity is common. For example, while we achieved better performing model using a deep learning framework, a more simpler model with equally acceptable performance seems to be a better option for our purposes, as simpler models are easier to train and maintain during the model’s life cycle.
+Model simplicity is an important consideration in applied machine learning. In practice, compromising model accuracy for model simplicity is common. For example, while we achieved better performing model using a deep learning framework, a more simpler model with equally acceptable performance seems to be a better option for our purposes, as simpler a model is easier to train and maintain during the model’s life cycle.
 
 For these reasons, I selected the logistic regression as a final deployment model.
 
@@ -209,7 +209,7 @@ While I achieved impressive results, there is still room for improvement. For ex
  - Performing log transformations on features that were not gaussian like and observe if we might get performance boost.
  - Building model ensembles.
 
-All these decisions are detected by the need to meet business objectives of the data science project.
+All these decisions are dictated by the need to meet business objectives of the data science project.
 
 In addition, the following applications could be augmented to the project:	
 -  Modifying the model’s API with a few lines of code to accept a JSON or csv inputs for batch predictions
