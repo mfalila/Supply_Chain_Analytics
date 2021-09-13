@@ -53,7 +53,7 @@ def predict():
     features_df = pd.DataFrame(data=features_dict)
     final_features = clf_pipeline.fit_transform(features_df)
     prediction = clf_model.predict(final_features)
-'''
+
     if prediction == 1:
         output = 'backorder'
     else:
@@ -79,7 +79,7 @@ if __name__ == '__main__':
 if __name__ == "__main__":
     app.run(debug=True)
 
-'''
+
     if prediction == 1:
         output = 'backorder'
     else:
