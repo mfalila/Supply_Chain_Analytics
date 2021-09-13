@@ -73,7 +73,7 @@ if __name__ == '__main__':
         output = 'not backorder'
     
 #Create and send response to api caller
-    return jsonify(status='Comple', label = output)
+    return jsonify(status='Complete', label = output)
 
 #The main function runs the whole flask
 if __name__ == "__main__":
