@@ -64,7 +64,7 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True)
- 
+ '''
 
  #Retrieve class name associated with predicted class
     if prediction == 1:
@@ -78,8 +78,8 @@ if __name__ == '__main__':
 #The main function runs the whole flask
 if __name__ == "__main__":
     app.run(debug=True)
-'''
 
+'''
     if prediction == 1:
         output = 'backorder'
     else:
@@ -92,3 +92,4 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 
+'''
