@@ -53,7 +53,7 @@ def predict():
     features_df = pd.DataFrame(data=features_dict)
     final_features = clf_pipeline.fit_transform(features_df)
     prediction = clf_model.predict(final_features)
-
+'''
     if prediction == 1:
         output = 'backorder'
     else:
@@ -64,4 +64,17 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True)
-        
+ 
+'''
+ #Retrieve class name associated with predicted class
+    if prediction == 1:
+        output = 'backorder'
+    else:
+        output = 'not backorder'
+    
+#Create and send response to api caller
+    return jsonify(status='Comple', label = output)
+
+#The main function runs the whole flask
+if __name__ == "__main__":
+    app.run(debug=True)
