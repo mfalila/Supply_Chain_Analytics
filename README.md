@@ -175,7 +175,7 @@ For detailed code and charts on the CNN model please see: **[06. cnn.ipynb](http
 
 Model simplicity is an important consideration in applied machine learning. In practice, compromising model accuracy for model simplicity is common. For example, while we achieved better performing model using a deep learning framework, a simpler model with equally acceptable performance could be  be a better option for our purposes as simpler a model is easier to train and maintain during the model’s life cycle.
 
-However, because all other simpler models did not achieve meaningful performance levels, we deployed the more complex CNN model. 
+However, because all other simpler models did not achieve meaningful performance levels, I deployed the more complex CNN model. 
 
 To deploy our model, I took the following steps:
 - Built a model’s web API using the Flask web development framework
@@ -201,7 +201,7 @@ I met this objective by taking the following steps:
 - Explored the dataset to understand the data file structure and the data structure.
 - Perform different tests of statistical significance to uncover hidden data relationships that our predictive model could learn from and leverage when predicting unseen instances.
 - Employed statistical analysis using various python libraries to identify the number and names of features that could more likely help in identifying backordered items.
-- Built and deployed a final logistic regression model as a web application on Heroku PaaS.
+- Built and deployed a final CNN model as a web application on Heroku PaaS.
 
 # Further Improvements and Applications
 
@@ -212,7 +212,7 @@ While I achieved impressive results, there is still room for improvement. For ex
 All these decisions are dictated by the need to meet business objectives of the data science project.
 
 In addition, the following applications could be augmented to the project:	
--  Modifying the model’s API with a few lines of code to accept a JSON or csv inputs for batch predictions
+-  Modifying the model’s API with a few lines of code to accept a JSON inputs for batch predictions
 -  Output probabilities associated with predictions to aid supply chain managers  take specific actions if an item has a probability to backorder above specified user defined thresholds.
 - Integrating the API as part of a full supply management system where an order is automatically triggered if the probability of an item backordering exceeds some user defined threshold.
 	
