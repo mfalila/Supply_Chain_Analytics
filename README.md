@@ -173,13 +173,13 @@ For detailed code and charts on the CNN model please see: **[06. cnn.ipynb](http
 
 # Model Deployment
 
-Model simplicity is an important consideration in applied machine learning. In practice, compromising model accuracy for model simplicity is common. For example, while we achieved better performing model using a deep learning framework, a more simpler model with equally acceptable performance seems to be a better option for our purposes, as simpler a model is easier to train and maintain during the model’s life cycle.
+Model simplicity is an important consideration in applied machine learning. In practice, compromising model accuracy for model simplicity is common. For example, while we achieved better performing model using a deep learning framework, a simpler model with equally acceptable performance could be  be a better option for our purposes as simpler a model is easier to train and maintain during the model’s life cycle.
 
-For these reasons, I selected the logistic regression as a final deployment model.
+However, because all other simpler models did not achieve meaningful performance levels, we deployed the more complex CNN model. 
 
 To deploy our model, I took the following steps:
 - Built a model’s web API using the Flask web development framework
-- Created a GitHub repository to store our model and required deployment code
+- Packaged our application into a docker container and pushed our application container into the Heroku container registry
 - Deployed our model using Heroku, a cloud platform as a service supporting python web applications. 
 
 Below is the model’s web API where a user can upload a csv file with a list of item information, hit predict, and the model returns a file with predicted outputs indicating whether the entered item will (1) or will not (0) backorder.
