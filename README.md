@@ -185,7 +185,7 @@ To deploy our model, I took the following steps:
 Below is the model’s web API where a user can upload a csv file with a list of item information, hit predict, and the model returns a file with predicted outputs indicating whether the entered item will (1) or will not (0) backorder.
 
 <p align="center">
-  <img width="630" height="200" src="images/9. deployment2.png">
+  <img width="400" height="200" src="images/9. deployment2.png">
 </p>
 
 The deployed model can be accessed from **[Backorder Predictor api](https://backorder-ml-app1.herokuapp.com/)**
