@@ -182,7 +182,7 @@ To deploy our model, I took the following steps:
 - Created a GitHub repository to store our model and required deployment code
 - Deployed our model using Heroku, a cloud platform as a service supporting python web applications. 
 
-Below is the model’s web API where a user can enter item information, hit predict, and the model returns a message stating whether the entered item will or will not backorder.
+Below is the model’s web API where a user can upload a csv file with item information, hit predict, and the model returns a file with predicted outputs indicating ng whether the entered item will (1) or will not backorder (0).
 
 <p align="center">
   <img width="630" height="200" src="images/9. deployment2.png">
