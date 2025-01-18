@@ -188,7 +188,7 @@ Below is the model’s web API where a user can upload a csv file with a list of
   <img width="400" height="200" src="images/9. deployment2.png">
 </p>
 
-The deployed model can be accessed from **[Backorder Predictor api](https://backorder-ml-app1.herokuapp.com/)**
+The deployed model can be accessed from **[Backorder Predictor api](https://supply-chain-analysis.onrender.com/predict)**
 
 For detailed deployment code please see: **[deployment](https://github.com/mfalila/supply_chain_analysis/tree/master/deployment)**
 
